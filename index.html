@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Solid State by HTML5 UP</title>
+		<title>Qiming Chen</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,10 +31,10 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li hidden><a href="generic.html">Generic</a></li>
+								<li hidden><a href="elements.html">Elements</a></li>
+								<li hidden><a href="#">Log In</a></li>
+								<li hidden><a href="#">Sign Up</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -44,34 +44,51 @@
 					<section id="banner">
 						<div class="inner">
 							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							<h2>Qiming Chen</h2>
+							<p class="icon solid fa-school">  University Of Massachusetts Amherst</p>
+							<p class="icon solid fa-home"> Boston,MA</p>
+							<p class="icon solid fa-envelope"> Jimmyqmchen@gmail.com</p>
 						</div>
 					</section>
 
 				<!-- Wrapper -->
 					<section id="wrapper">
 
+						<h1 style="font-size:300%""><center>Project</center></h1>
+
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Org Chart App</h2>
+										<p>Sponsored by Ultimate Software Group, Inc </p>
+										<ul>
+											<li>Building a microservice for Ultimate Software Inc to expand their services</li>
+											<li>Developed a web app using Angular as front-end, NestJs as Back-end Server, and MongoDB</li>
+											<li>Let employee see their company org char, Manager is able to transfer their employee to other department which will shown in the org chart</li>
+											<li>Using JWT for authentication(refresh token, access token)</li>
+											<li>Using docker to containerize the front-end and the back-end server also the configure local mongoDB with replica sets</li>
+											<li>Transactions make sure the data integrity</li>
+											<li>Deployed front-end server use GitHub Page</li>
+											<li>Deployed back-end server use Heroku</li>
+											<li>Deployed database server use Mongo Atlas</li>									</ul>
+										<a href="https://github.com/CodyRichter/ultimate-orgchart" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
+						<h1 style="font-size:300%""><center>Education</center></h1>
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">University of Massachusetts Amherst: Software Engineering</h2>
+										<h2>GPA: 3.85</h2>
+										<h2>Dean's List of Spring 2020</h2>
+										<h2>01/01/2020 --- 12/31/2021</h2>
+										<a href=https://www.umass.edu class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -81,15 +98,17 @@
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Bunker Hill Community College: Computer Science Transfer Option</h2>
+										<h2>GPA: 3.89</h2>
+										<h2>Dean's List Spring2018 Fall2018 Spring2019 Fall2019</h2>
+										<h2>01/01/2018 --- 12/31/2019</h2>
+										<a href="https://www.bhcc.edu/" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
+							<section id="four" class="wrapper alt style1" style="display: none;">
 								<div class="inner">
 									<h2 class="major">Vitae phasellus</h2>
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
@@ -131,7 +150,6 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field">
@@ -152,14 +170,14 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="icon solid fa-home">
+								<li class="icon solid fa-home" style="display: none">
 									Untitled Inc<br />
 									1234 Somewhere Road Suite #2894<br />
 									Nashville, TN 00000-0000
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="icon solid fa-phone" style="display: none">(000) 000-0000</li>
+								<li class="icon solid fa-envelope"><a href="#">jimmyqmchen@gmail.com</a></li>
+								<li class="icon brands fa-twitter"><a href="#" style="display: none">twitter.com/untitled-tld</a></li>
 								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
 							</ul>
